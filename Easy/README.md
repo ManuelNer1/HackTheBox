@@ -1,1 +1,2 @@
-#Editorial Machine ![alt text](image.png)
+# Editorial Machine 
+![alt text](image.png)
