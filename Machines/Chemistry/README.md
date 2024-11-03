@@ -38,7 +38,7 @@ As observed, the port scan reveals two open ports: 22 and 5000. The first port, 
 The second port, 5000, is less immediately identifiable. To investigate further, we can attempt to access it via a web browser at http://10.10.11.38:5000/. This may reveal a web-based service or application running on the target, which could offer additional information or potential entry points for exploitation.
 
 ### Web Service Discovery
-![alt text](/images/1.png)
+![alt text](/HackTheBox/Machines/Chemistryimages/1.png)
 
 Upon accessing port 5000, we discovered a web application titled "Chemistry CIF Analyzer." The landing page displays the message:
 
