@@ -38,7 +38,7 @@ As observed, the port scan reveals two open ports: 22 and 5000. The first port, 
 The second port, 5000, is less immediately identifiable. To investigate further, we can attempt to access it via a web browser at http://10.10.11.38:5000/. This may reveal a web-based service or application running on the target, which could offer additional information or potential entry points for exploitation.
 
 ### Web Service Discovery
-![alt text](/HackTheBox/Machines/Chemistry/images/1.png)
+![alt text](images/1.png)
 
 Upon accessing port 5000, we discovered a web application titled "Chemistry CIF Analyzer." The landing page displays the message:
 
@@ -48,7 +48,7 @@ In addition to this functionality, the page also features two buttons for Login 
 
 This message provides valuable insight into the functionality of the application, indicating that it enables users to upload and analyze CIF files. Understanding this feature will be crucial in navigating the challenges associated with this machine. Given the nature of file uploads and user authentication, it may also present opportunities for exploitation, which we will explore further.
 
-![alt text](/images/2.png)
+![alt text](images/2.png)
 
 When clicking the Login button, we are presented with a login form. However, before attempting an SQL injection attack, it’s worth noting the message displayed above the form: "Don't have an account? Register here."
 
