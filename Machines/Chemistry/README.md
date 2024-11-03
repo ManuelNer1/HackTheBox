@@ -54,7 +54,7 @@ When clicking the Login button, we are presented with a login form. However, bef
 
 This prompts us to consider registering for an account first, as it may provide additional access or information that could be beneficial for our exploration of the application.
 
-![alt text](/images/3.png)
+![alt text](images/3.png)
 
 After clicking "Register here," we are presented with a form requiring a username and password for account creation. To proceed, we will enter the following test credentials:
 
@@ -63,4 +63,4 @@ After clicking "Register here," we are presented with a form requiring a usernam
 
 Once the information is filled out, we will submit the form to create the account and then attempt to log in with the same credentials.
 
-![alt text](/images/4.png)
+![alt text](images/4.png)
