@@ -62,3 +62,81 @@ Para obtener la bandera, use la misma carga útil que usamos anteriormente, pero
 ```
 <script>alert(document.cookie)</script>
 ```
+
+## Reflected XSS
+
+Esta vulnerabilidad es **Non-Persistent** esto quiere decir que la entrada llega al servidor back-end, pero esta no se almacena, lo que son mensajes temporales y una vez que se salga de la pagina no se vovera a ejectuar.
+
+### Ejemplo 
+
+Como ejemplo tenemos la misma pagina pero ahora con unos pequeños cambios.
+
+![alt text](images/5.png)
+
+Al ingresa la palabra test se obtine este mensaje, Task 'test' could not be added, intentare cargar el mismo paylod del ejemplo pasado 
+
+```
+<script>alert(window.origin)</script>
+```
+
+![alt text](images/6.png)
+
+Dando como resultado, lo esperado, solo que con la diferencia que al buscar nuevamente la pagina este ataque no es persistente a menos que carges la liga de la siguiente manera:
+
+```
+http://83.136.254.158:43299/index.php?task=%3Cscript%3Ealert%28window.origin%29%3C%2Fscript%3E
+```
+
+La cual contiene el codigo que se esta inyectando por lo cual esta funcionando, pero al buscar solamente
+
+```
+http://83.136.254.158:43299
+```
+
+La pagina funciana normalente sin el ataque, ya que este no esta almacenado 
+
+## DOM XSS
+
+La entrada de datos, se procesa completamente en el lado del cliente a traves de JavaScript. DOM XSS ocurre cuando se usa JavaScript para cambiar la fuente de la página a través del Document Object Model (DOM). 
+
+Para comprender un poco mas DOM, se tiene que comprender Source y Sink:
+
+- El Source es el objeto JavaScript que toma la entrada del usuario y puede ser cualquier parámetro de entrada como un parámetro de URL o un campo de entrada, como vimos anteriormente. 
+
+- El Sink es la función que escribe la entrada del usuario en un objeto DOM en la página.
+
+Algunas de las funciones de JS comunes utilizadas para escribir objetos DOM son:
+
+- document.write()
+- DOM.innerHTML
+- DOM.outerHTML
+
+Además, algunos de los jQuery Las funciones de la biblioteca que escriben en objetos DOM son: 
+ 
+- add()
+- after()
+- append()
+
+```
+var pos = document.URL.indexOf("task=");
+var task = document.URL.substring(pos + 5, document.URL.length);
+document.getElementById("todo").innerHTML = "<b>Next Task:</b> " + decodeURIComponent(task);
+```
+Como ejemplo tenemos el codigo de la pagina del reto, donde se llega apreciar la funcion **.innerHTML** por lo que puede ser suceptible a ataques DOM XSS
+
+### Ejemplo
+
+![alt text](images/8.png)
+
+Como se puede observar se tiene la siguiente pagina web identica a las anteriores, al momento de cargarle alguna tarea para realizar y analizar las herramienta de red dentro del navegador no vemos, algun metodo HTTP intercambiando informacion por lo que podemos llegar a pensar que todo esto funciona dentro de la pagina.
+
+![alt text](images/7.png)
+
+```
+<img src="" onerror=alert(window.origin)>
+```
+
+al cargar este payload vemos que nos arroja lo esperado
+
+![alt text](images/9.png)
+
