@@ -88,4 +88,4 @@ curl -L http://<IP>:<PORT>/flag
 ## 📚 Referencia
 
 - [RFC HTTP Status Codes](https://www.rfc-editor.org/rfc/rfc9110.html#name-status-codes)
-- [HTB Academy - Module 35 (Parte 3)](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests](https://academy.hackthebox.com/module/35)

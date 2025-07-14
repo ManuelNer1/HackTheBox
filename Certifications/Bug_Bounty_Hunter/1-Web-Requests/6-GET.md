@@ -45,4 +45,4 @@ curl "http://<IP>:<PORT>/search.php?search=flag"
 ## 📚 Referencias
 
 - [MDN - GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)
-- [HTB Academy - Module 35 (Parte 6)](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests](https://academy.hackthebox.com/module/35)

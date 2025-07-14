@@ -114,4 +114,4 @@ curl -b 'PHPSESSID=xxxx' http://IP:PORT/        # Enviar cookies
 ## 📚 Referencia
 
 - [RFC HTTP](https://tools.ietf.org/html/rfc2616)
-- [HTB Academy - Module 35](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests](https://academy.hackthebox.com/module/35)

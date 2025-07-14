@@ -54,4 +54,4 @@ curl -X POST -d "username=admin&password=admin" http://<IP>:<PORT>/login
 ## 📚 Referencias
 
 - [MDN - POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
-- [HTB Academy - Module 35 (Parte 7)](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests)](https://academy.hackthebox.com/module/35)

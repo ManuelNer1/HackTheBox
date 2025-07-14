@@ -37,4 +37,4 @@
 
 - [MDN - HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 - [MDN - HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
-- [HTB Academy - Module 35 (Parte 5)](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests](https://academy.hackthebox.com/module/35)

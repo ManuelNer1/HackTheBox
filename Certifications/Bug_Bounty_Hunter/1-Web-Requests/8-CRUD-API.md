@@ -62,4 +62,4 @@ curl -X DELETE http://<IP>:<PORT>/api.php/city/New_HTB_City
 ## 📚 Referencias
 
 - [MDN - HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
-- [HTB Academy - Module 35 (Parte 8)](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests](https://academy.hackthebox.com/module/35)

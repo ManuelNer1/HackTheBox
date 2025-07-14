@@ -94,4 +94,4 @@ curl -u admin:admin http://<IP>:<PORT>/flag
 ## 📚 Referencia
 
 - [RFC HTTP Authentication](https://datatracker.ietf.org/doc/html/rfc7617)
-- [HTB Academy - Module 35 (Parte 2)](https://academy.hackthebox.com/module/35)
+- [HTB Academy - Web Requests](https://academy.hackthebox.com/module/35)
